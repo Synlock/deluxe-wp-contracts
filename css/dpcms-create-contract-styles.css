@@ -1,0 +1,267 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.dpcms-contract-document,
+.dpcms-contract-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dpcms-contract-form .dpcms-checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dpcms-contract-form .dpcms-checkbox-container label {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.dpcms-contract-form .dpcms-checkbox-container input[type="checkbox"] {
+    margin-right: 65%;
+    margin-top: 10px;
+}
+
+.dpcms-contract-document h2,
+.dpcms-contract-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dpcms-contract-document h3,
+.dpcms-contract-form h3 {
+    font-size: 25px;
+    margin: 0;
+    margin-top: 100px;
+    color: #555;
+}
+
+.dpcms-contract-document p,
+.dpcms-contract-document ul {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.dpcms-contract-document ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dpcms-contract-document ul li {
+    margin-bottom: 10px;
+}
+
+.dpcms-signature-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.dpcms-signature-section div {
+    text-align: center;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.dpcms-signature-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.dpcms-company-details {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dpcms-company-details img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.dpcms-contract-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dpcms-contract-form input,
+.dpcms-contract-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.dpcms-price-input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dpcms-price-input-wrapper span {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.dpcms-price-input {
+    flex-grow: 1;
+}
+
+.dpcms-contract-form label input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.dpcms-contract-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dpcms-contract-form button:hover {
+    background-color: #005a87;
+}
+
+.dpcms-signature-pad {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: 200px;
+}
+
+.dpcms-dynamic_fields_list li {
+    margin-bottom: 5px;
+}
+
+.dpcms-dynamic_fields_list input[type="text"],
+.dpcms-dynamic_fields_list input[type="number"],
+.dpcms-dynamic_fields_list button,
+.dpcms-checkbox-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.dpcms-dynamic_fields_list input[type="text"] {
+    width: 150px;
+}
+
+.dpcms-dynamic_fields_list input[type="number"] {
+    width: 150px;
+}
+
+.dpcms-custom-option-price {
+    display: none;
+}
+
+.dpcms-checkbox-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dpcms-checkbox-wrapper label {
+    margin-bottom: 2px;
+}
+
+.dpcms-dynamic_fields_list button {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.dpcms-custom-option-li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dpcms-tooltip-container {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.dpcms-tooltip-icon {
+    margin-left: 4px;
+    cursor: pointer;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dpcms-tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Position the tooltip above the icon */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.dpcms-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.dpcms-tooltip-icon:hover .dpcms-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .dpcms-custom-option-li {
+        display: block;
+    }
+}

@@ -1,0 +1,631 @@
+/* Section title */
+.dpcms-section-title {
+    background: #0073aa;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+.dpcms-section-title::after {
+    content: '\25BC';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.dpcms-section-title.open {
+    background: #005177;
+}
+
+.dpcms-section-title.open::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Section content */
+.dpcms-section-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General section container */
+.dpcms-section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Input and textarea styles */
+.dpcms-section-content label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.dpcms-section-content input[type="file"],
+.dpcms-section-content input[type="number"],
+.dpcms-section-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.dpcms-section-content input[type="number"] {
+    width: auto;
+}
+
+.dpcms-section-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Image preview */
+.dpcms-section-content img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#dpcms-rep-roles-title {
+    margin: 10px 0 20px 0;
+}
+
+/* Description text margins */
+.dpcms-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #333;
+}
+
+.dpcms-table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dpcms-table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.dpcms-table th,
+.dpcms-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.dpcms-table th {
+    background-color: #f1f1f1;
+}
+
+.dpcms-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.dpcms-table td .dpcms-dashicon-td {
+    padding: 0;
+}
+
+.dpcms-table-search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.dpcms-table-search input[type="text"],
+.dpcms-table-search div {
+    height: fit-content;
+    margin-right: 10px;
+}
+
+.dpcms-checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5px 0 5px;
+}
+
+.dpcms-checkbox-container label {
+    margin-bottom: 3px;
+}
+
+.dpcms-checkbox-container div {
+    margin: 0;
+    padding: 0;
+}
+
+.dpcms-table .dpcms-dashicon-td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5;
+}
+
+.dpcms-dashicon-td a {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.dpcms-dashicon-td span {
+    margin: 0 3px 0 3px;
+}
+
+.dpcms-dashicons {
+    vertical-align: middle;
+}
+
+/* Base styling for the pagination container */
+.dpcms-tablenav-pages {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Styling for individual page links */
+.dpcms-tablenav-pages a,
+.dpcms-tablenav-pages span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Styling for the current page link */
+.dpcms-tablenav-pages .current {
+    background-color: #005177;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hover effect for page links */
+.dpcms-tablenav-pages a:hover {
+    background-color: #004164;
+}
+
+/* Disabled state for the previous and next links */
+.dpcms-tablenav-pages .disabled {
+    background-color: #ddd;
+    color: #aaa;
+    pointer-events: none;
+    cursor: default;
+}
+
+.dpcms-add-field:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.wrap {
+    margin: 0;
+}
+
+.dpcms-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.dpcms-form-group {
+    width: 66%;
+}
+
+.dpcms-form-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    margin-bottom: 10px;
+}
+
+.dpcms-form-row label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dpcms-form-row select {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#dpcms-user_search {
+    width: 400px;
+    height: 43px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#user_id {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#dpcms-userTable {
+    display: table;
+    margin-top: 20px;
+}
+
+#dpcms-toggleTableButton {
+    margin-bottom: 20px;
+}
+
+/* Align checkboxes and labels in a row */
+.dpcms-capability-checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dpcms-capability-checkbox-container label {
+    margin-bottom: 0;
+    padding-bottom: 4px;
+}
+
+#dpcms-roles-container {
+    display: flex;
+}
+
+#dpcms-add-role {
+    width: 50%;
+}
+
+#dpcms-new-role-name {
+    width: 200px;
+    height: 30px;
+    margin: 6px 0 8px 0;
+}
+
+#dpcms-existing-roles {
+    width: 50%;
+}
+
+#dpcms-add-role h3,
+#dpcms-existing-roles h3 {
+    margin: 0 0 1em 0;
+}
+
+.dpcms-capability-checkbox-container label {
+    font-weight: normal;
+}
+
+/* General container for dynamic fields */
+#dpcms-dynamic-fields-container {
+    margin-bottom: 20px;
+}
+
+/* Field group styling */
+.dpcms-field-group {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Field styling */
+.dpcms-field {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin: 15px 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Adds spacing between elements */
+}
+
+/* Header and field labels */
+.dpcms-field-group label,
+.dpcms-fields label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    margin-top: 0;
+    /* Ensure no top margin */
+    margin-bottom: 0;
+    /* Ensure no bottom margin */
+}
+
+/* Input and select styles */
+.dpcms-field-group input[type="text"],
+.dpcms-field-group input[type="number"],
+.dpcms-field-group input[type="email"],
+.dpcms-field-group input[type="tel"],
+.dpcms-field-group select,
+.dpcms-field-group textarea {
+    max-width: 300px;
+    /*    Adjust this value as needed */
+    width: 100%;
+    padding: 8px;
+    /* Reduced padding for smaller height */
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    /* Reduced font size for smaller appearance */
+}
+
+.dpcms-field-group input[type="checkbox"] {
+    margin-top: 0;
+    /* Ensure no top margin */
+    margin-bottom: 0;
+    /* Ensure no bottom margin */
+    margin-right: 10px;
+    /* Keep horizontal spacing */
+}
+
+/* Button styles */
+.dpcms-field-group .dpcms-add-field,
+.dpcms-field-group .dpcms-remove-field-group,
+.dpcms-field-group .dpcms-move-buttons button,
+.dpcms-field-group .dpcms-remove-field,
+.dpcms-field-group .dpcms-remove-list,
+#dpcms-add-field-group {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+
+.dpcms-field-group .dpcms-add-field:hover,
+.dpcms-field-group .dpcms-remove-field-group:hover,
+.dpcms-field-group .dpcms-move-buttons button:hover,
+.dpcms-field-group .dpcms-remove-field:hover,
+.dpcms-field-group .dpcms-remove-list:hover,
+#dpcms-add-field-group:hover {
+    background: #005177;
+}
+
+/* Move buttons */
+.dpcms-move-buttons {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.dpcms-move-buttons button {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* List group styling */
+.dpcms-list-group {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the top label */
+.dpcms-list-group .top-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Container for the label and checkbox */
+.dpcms-label-checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Label and checkbox styling */
+.dpcms-label-checkbox-container label {
+    margin: 0 10px 0 0;
+    /* Right margin for spacing */
+    font-size: 1em;
+}
+
+.dpcms-label-checkbox-container input[type="checkbox"] {
+    margin: 0 10px 0 0;
+    /* Right margin for spacing */
+}
+
+.dpcms-label-checkbox-container button {
+    margin-top: 0;
+}
+
+/* Button styling */
+.dpcms-label-checkbox-container .dpcms-remove-list {
+    margin-left: auto;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+
+.dpcms-label-checkbox-container .dpcms-remove-list:hover {
+    background: #005177;
+}
+
+.dpcms-signature-info {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.dpcms-signature-title {
+    font-size: 18px;
+    margin-bottom: 300px;
+    color: #555;
+}
+
+.dpcms-signature-table {
+    width: 100%;
+    margin-top: 60px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.dpcms-signature-cell {
+    width: 50%;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.dpcms-signature-content {
+    margin: 0 0 60px 0;
+    padding: 0;
+}
+
+.dpcms-signature-img {
+    width: 150px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.dpcms-signature-line {
+    border-bottom: 1px solid #000;
+    width: 175px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.dpcms-signature-text {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+
+.dpcms-empty-cell {
+    margin-bottom: 10px;
+}
+
+.dpcms-tooltip-container {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.dpcms-tooltip-icon {
+    margin-left: 4px;
+    cursor: pointer;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dpcms-tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Position the tooltip above the icon */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.dpcms-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.dpcms-tooltip-icon:hover .dpcms-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#dpcms-scroll-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#dpcms-scroll-buttons button {
+    padding: 10px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#dpcms-scroll-buttons button:hover {
+    background-color: #005177;
+}
+
+@media only screen and (max-width: 768px) {
+    #dpcms-new-role-name {
+        width: 200px;
+        height: 30px;
+        margin: 0;
+    }
+
+    .dpcms-field-group {
+        padding: 10px;
+    }
+
+    .dpcms-move-buttons {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
